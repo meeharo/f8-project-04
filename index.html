@@ -23,11 +23,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -60,54 +55,103 @@
                 </nav>
                 <a href="#!" class="btn header__btn">Sign up</a>
             </div>
+        </div>
+    </header>
 
-            <!-- Hero -->
-            <section class="hero">
-                <div class="hero__left">
-                    <div class="hero__images">
-                        <div class="hero__background">
-                            <img src="./assets/img/hero-01.jpg" alt="Pet" class="hero__img">
-                        </div>
-                        <div class="hero__background">
-                            <img src="./assets/img/hero-02.jpg" alt="Pet" class="hero__img">
-                        </div>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <section class="hero__media">
+                    <div class="hero__img-wrap">
+                        <img src="./assets/img/hero-01.jpg" alt="Pet" class="hero__img">
+                        <img src="./assets/img/decor-02.svg" alt="" class="hero__decor hero__decor-left ">
+                        <img src="./assets/img/decor-01.svg" alt="" class="hero__decor hero__decor-right">
                     </div>
-                    <ul class="hero-info">
-                        <li class="hero-info__item">
-                            <img src="./assets/img/hero-info-01.jpg" alt="Pet" class="hero-info__item-img">
-                            <div class="hero-info__item-detail">
-                                <h3 class="hero-info__heading">Pet Health</h3>
-                                <span></span>
+                    <div class="hero__img-wrap hero__img-wrap-small">
+                        <img src="./assets/img/hero-02.jpg" alt="Pet" class="hero__img">
+                    </div>
+                    <ul class="hero__list">
+                        <!-- Hero list item 1 -->
+                        <section class="hero-list-item">
+                            <img src="./assets/img/hero-info-01.jpg" alt="Pet" class="hero-list-item__thumb">
+                            <div class="hero-list-item__info">
+                                <p class="hero-list-item__title">Pet Health</p>
+                                <div class="hero-list-item____skeleton"></div>
+                                <div class="hero-list-item____skeleton" style="--width: 39px"></div>
                             </div>
-                        </li>
-                        <li class="hero-info__item">
-                            <img src="./assets/img/hero-info-02.jpg" alt="Pet" class="hero-info__item-img">
-                            <div class="hero-info__item-detail">
-                                <h3 class="hero-info__heading">Pet Care</h3>
-                                <span></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        </section>
 
-                <div class="hero__content">
+                        <div class="hero-list-item__separate"></div>
+                        
+                        <!-- Hero list item 2 -->
+                        <section class="hero-list-item">
+                            <img src="./assets/img/hero-info-02.jpg" alt="Pet" class="hero-list-item__thumb">
+                            <div class="hero-list-item__info">
+                                <h3 class="hero-list-item__title">Pet Care</h3>
+                                <div class="hero-list-item____skeleton"></div>
+                                <div class="hero-list-item____skeleton" style="--width: 39px"></div>
+                            </div>
+                        </section>
+                        
+                    </ul>
+                </section>
+
+                <section class="hero__content">
                     <h1 class="hero__heading">Established & Trusted Pet Care Service</h1>
                     <p class="hero__desc">Discover a wide variety of Pawsitive services to choose from, including daycare, private walks, office duty and spa.</p>
                     <div class="hero-cta">
                         <div class="hero-cta__btn">
-                            <a href="#!" class="btn hero-cta__link">Book a Meet</a>
-                            <button class="hero-cta__icon">
-                                <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.48584 0.5L3.98584 3L1.48584 5.5" stroke="#FD5056" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
+                            <a href="#!" class="btn btn--primary hero-cta__link">Book a Meet
+                                <span class="hero-cta__icon btn-icon">
+                                    <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
+                                        <path d="M1.48584 0.5L3.98584 3L1.48584 5.5" stroke="#FD5056" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </a>
                         </div>
                         <a href="#!" class="hero-cta__call">Schedule a Call</a>
                     </div>
-                </div>
-
-            </section>
+                </section>
+            </div>
+    
         </div>
-    </header>
+
+    </section>
+
+    <main style="height: 10000px;">
+        <!-- About -->
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <section class="about__content">
+                        <p class="about__label">//  About  //</p>
+                        <h2 class="about__heading section__heading">Best Agency For
+                            Your Pet.</h2>
+                        <p class="about__desc section__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <section class="about__checklist">
+                            <span class="about__check-item">Certified Groomer</span>
+                            <span class="about__check-item">Animal Lover</span>
+                            <span class="about__check-item">14+ Years Experience</span>
+                            <span class="about__check-item">Pet Parent Of 3 Dogs</span>
+                        </section>
+                    </section>
+                    <section class="about__media">
+                        <div class="about__card">
+                            <b class="about__card-title">20+</b>
+                            <p class="about__card-desc">Years Experience</p>
+                            <img src="./assets/icon/Union.svg" alt="" class="about__card-decor">
+                        </div>
+                        <figure class="about__img-wrap">
+                            <img src="./assets/img/about-01.png" alt="" class="about__img">
+                            <img src="./assets/icon/about-decor.svg" alt="" class="about__media-decor">
+                        </figure>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
