@@ -308,7 +308,7 @@ a {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 61px 0 53px;
-    column-gap: 108px;
+    row-gap: 146px;
 }
 
 .about__label {
@@ -334,6 +334,7 @@ a {
     justify-content: space-between;
     gap: 36px;
     margin-top: 54px;
+    margin-right: 108px;
 }
 
 .about__check-item {
@@ -432,3 +433,122 @@ a {
     right: -50px;
     z-index: -1;
 }
+
+.about__img-wrap-bottom {
+    margin: 0;
+    width: 458px;
+    height: 500px;
+    background: linear-gradient(180deg, #C6E2FA 0%, #94C2EA 100%);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+    border-radius: 18px;
+    z-index: -1;
+}
+
+.about__img-wrap-bottom::after {
+    content: none;
+}
+
+.about__img-bottom {
+    width: 100%;
+}
+
+.about__decor-img {
+    position: absolute;
+}
+
+.about__decor-img:nth-child(1) {
+    top: 12px;
+    right: 63px;
+}
+
+.about__decor-img:nth-child(2) {
+    top: 33px;
+    right: -21px;
+}
+
+.about__decor-img:nth-child(3) {
+    top: -16px;
+    right: 13px;
+}
+
+.about__decor-img:nth-child(4) {
+    right: -33px;
+    top: 268px;
+}
+
+.about__decor-img:nth-child(5) {
+    bottom: 150px;
+    right: 19px;
+}
+
+.about__decor-img:nth-child(6) {
+    right: -24px;
+    bottom: -40px;
+}
+
+.about__decor-img:nth-child(7) {
+    right: -33px;
+    bottom: -47px;
+}
+
+.about__decor-img:nth-child(8) {
+    right: -42px;
+    bottom: -55px;
+}
+
+.about__heading-bottom {
+    width: 543px;
+}
+
+.about__desc-bottom {
+    width: 511px;
+}
+
+.tab__list {
+    display: flex;
+    position: relative;
+    margin: 52px 0 36px;
+    column-gap: 56px;
+}
+
+.tab__list::after,
+.tab__item--active::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    border-radius: 1px;
+    background: #ff5b2e;
+    opacity: 0.07;
+}
+
+.tab__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+
+.tab__item--active::after {
+    width: 95px;
+    opacity: 1;
+}
+
+.tab__icon {
+    width: 20px;
+}
+
+.tab__title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #48496A;
+}
+
+
