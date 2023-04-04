@@ -508,11 +508,12 @@ a {
 .tab__list {
     display: flex;
     position: relative;
-    margin: 52px 0 36px;
+    margin-top: 52px;
     column-gap: 56px;
 }
 
 .tab__list::after,
+.tab__content-more::after,
 .tab__item--active::after {
     position: absolute;
     content: "";
@@ -551,4 +552,159 @@ a {
     color: #48496A;
 }
 
+.tab__content-item {
+    /* display: none; */
+} 
 
+.tab__content-item--active {
+    display: block;
+} 
+
+.tab__content-desc {
+    width: 391px;
+    padding-top: 36px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+
+.tab__content-more {
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #FF5D31;
+}
+
+.tab__content-more::after {
+    opacity: 1;
+    height: 1.5px;
+}
+
+/* Service */
+.service {
+    background-color: #FFF6ED;
+    margin-top: 152px;
+}
+
+.service__inner {
+    padding: 68px 0 100px;
+}
+
+.service__top {
+    text-align: center;
+}
+
+.service__label {
+    margin-bottom: 15px;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-align: center;
+    color: #5E6085;
+}
+
+.service__body {
+    display: flex;
+    align-items: center;
+    column-gap: 65px;
+    margin-top: 71px;
+}
+
+.service__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.service__item {
+    width: 294px;
+    background: white;
+    padding: 30px 0 30px 28px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+}
+
+.service-item__heading {
+    padding-left: 12px;
+    position: relative;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #000958;
+}
+
+.service-item__heading::after {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 2px;
+    border-radius: 1px;
+    background: linear-gradient(#ff5b2e, #ffa187);
+
+}
+
+.service-item__desc {
+    width: 244px;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+
+.service-item__more {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #34396A;
+}
+
+.service-item__more::after {
+    content: url('../assets/icon/arrow-up.svg');
+    margin: 1px 0 0 6px;
+}
+
+.service__media {
+    position: relative;
+    margin-top: 18px;
+}
+
+.service__media::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 350px;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+    border-radius: 10px;
+}
+
+.service__img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: block;;
+}
+
+.service__cta-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+}
+
+.service__cta {
+    width: 214px;
+    color: var(--primary-color);
+    border-color: currentColor;
+}
