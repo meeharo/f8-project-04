@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body style="height: 10000px;">
     <header class="header">
         <div class="container">
             <div class="header__top">
@@ -119,7 +119,7 @@
 
     </section>
 
-    <main style="height: 10000px;">
+    <main>
         <!-- About -->
         <section class="about">
             <div class="container">
@@ -440,26 +440,246 @@
         <section class="review">
             <div class="container">
                 <div class="review__inner">
-                    <a href="">
-                        <img src="./assets/icon/arrow-left.svg" alt="" class="review__btn review__btn-arrow-left review__icon">
-                    </a>
-                    <a href="#!">
-                        <img src="./assets/icon/arrow-right.svg" alt="" class="review__btn review__btn-arrow-right review__icon">
-                    </a>
-
-                    <div class="review__media">
-                        <img src="./assets/img/review-image.png" alt="" class="review__media-img">
-                    </div>
+                    <!-- Previous btn -->
+                    <button class="review__btn">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.875 10.9985H3.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.75 5.37354L3.125 10.9985L8.75 16.6235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
                     <div class="review__content">
-                        <h2 class="section__heading review__heading">Our Reviews</h2>
-                        <p class="review__desc">
-                            “It was very comforting to recieve a text and pics each day about our pets and how they were doing. It was also nice that my pets were in the comfortable environment of their own home and received playfull attention from our pet sitters as well. Thanks so much!”
-                        </p>
-                        <p class="review__name">Karla Deras</p>
+                        <div class="review__list">
+                            <div class="review__media">
+                                <img src="./assets/img/review-image.png" alt="" class="review__media-img">
+                            </div>
+                            <div class="review-item__content">
+                                <h2 class="section__heading review__heading">Our Reviews</h2>
+                                <p class="review__desc">
+                                    “It was very comforting to recieve a text and pics each day about our pets and how they were doing. It was also nice that my pets were in the comfortable environment of their own home and received playfull attention from our pet sitters as well. Thanks so much!”
+                                </p>
+                                <p class="review__name">Karla Deras</p>
+                            </div>
+                        </div>
+
+                        <div class="review__dots">
+                            <div class="review__dot review__dot--active"></div>
+                            <div class="review__dot"></div>
+                            <div class="review__dot"></div>
+                            <div class="review__dot"></div>
+                        </div>
+                    </div>
+
+                    <!-- Next btn -->
+                    <button class="review__btn">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.125 10.9985H16.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.25 5.37354L16.875 10.9985L11.25 16.6235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="blog">
+            <div class="container">
+                <div class="blog__inner">
+                    <div class="blog__top">
+                        <h2 class="section__heading blog_heading">Our Blog</h2>
+                        <div class="blog__view">
+                            <p class="section__desc blog__desc">
+                                Stay up to date with the latest tech trands and news in the pets.
+                            </p>
+                            <a href="#!" class="btn btn--white blog__btn">View All Blog</a>
+                        </div>
+                    </div>
+
+                    <div class="blog__list">
+                        <!-- Blog item 1 -->
+                        <div class="blog__item">
+                            <div class="blog-item__top">
+                                <span class="blog__label">21 june 2021</span>
+                                <a href="#!" class="blog__media">
+                                    <img src="./assets/img/blog-01.jpg" alt="Animal" class="blog__media-img" >
+                                </a>
+                            </div>
+                            <div class="blog-item__info">
+                                <a href="#!">
+                                    <h3 class="blog-item__heading">
+                                        Building Bonds and Trusting Relationships with Your Pets.
+                                    </h3>
+                                </a>
+                                <p class="blog-item__desc">
+                                    There isn’t a relationship around that can survive without trust. My relationship with my dog Peyton is deep...
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Blog item 2 -->
+                        <div class="blog__item">
+                            <div class="blog-item__top">
+                                <span class="blog__label">28 june 2021</span>
+                                <a href="#!" class="blog__media">
+                                    <img src="./assets/img/blog-02.jpg" alt="Animal" class="blog__media-img">
+                                </a>
+                            </div>
+                            <div class="blog-item__info">
+                                <a href="#!">
+                                    <h3 class="blog-item__heading">
+                                        Celebrity pet photographer Grace Chon on taking ...
+                                    </h3>
+                                </a>
+                                <p class="blog-item__desc">
+                                    Doting pet parents have a relentless need to constantly photograph every adorable pet moment...
+                            </div>
+                        </div>
+
+                        <!-- Blog item 3 -->
+                        <div class="blog__item">
+                            <div class="blog-item__top">
+                                <span class="blog__label">10 july 2021</span>
+                                <a href="#!" class="blog__media">
+                                    <img src="./assets/img/blog-03.jpg" alt="Animal" class="blog__media-img">
+                                </a>
+                            </div>
+                            <div class="blog-item__info">
+                                <a href="#!">
+                                    <h3 class="blog-item__heading">
+                                        5 Simple Tricks To Create A More Conscious ...
+                                    </h3>
+                                </a>
+                                <p class="blog-item__desc">
+                                    It is easy to forget that animals are living creatures with a beating heart.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <a href="#!">
+                        <img src="./assets/icon/Logo.svg" alt="Logo">
+                    </a>
+                    <form class="search-form">
+                        <input type="email" placeholder="Enter your email" class="search-form__input">
+                        <a href="#!">
+                            <button class="footer__btn">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.125 10.9985H16.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.25 5.37354L16.875 10.9985L11.25 16.6235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </button>
+                        </a>
+                    </form>
+
+                    <h3 class="footer__heading">Follow Us</h3>
+                    <div class="footer__social">
+                        <a href="#!" class="footer__social-item">
+                            <img src="./assets/icon/fb.svg" alt="Facebook">
+                        </a>
+                        <a href="#!" class="footer__social-item">
+                            <img src="./assets/icon/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="#!" class="footer__social-item">
+                            <img src="./assets/icon/linked.svg" alt="linked">
+                        </a>
+                        <a href="#!" class="footer__social-item">
+                            <img src="./assets/icon/ins.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__row">
+                        <!-- Column 1 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Explore</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#!" class="footer__link">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Our Team</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Adopt Pet</a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Column 2 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Useful links</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#!" class="footer__link">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Site Map</a>
+                                </li>
+                            </ul>
+                        </section>
+
+
+                        <!-- Column 3 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Contact Info</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#!" class="footer__link">abc@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">0 (800) - 000 - 00 - 00</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">New York, NY, Racawy 7</a>
+                                </li>
+                            </ul>
+                        </section>
+
+
+                        <!-- Column 4 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Opening Time</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#!" class="footer__link">Mon - Fri: 08.00 am - 20.00pm</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Saturday: 09.00 am - 20.00pm</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">Sunday: We are Closed</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <p class="footer__copyright">
+                        Copyright & Design By Uihut
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
